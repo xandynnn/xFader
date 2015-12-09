@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>xFader jQuery Plugin - Alexandre Mattos</title>
+<link href="css/xfader.css" type="text/css" rel="stylesheet" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/jquery.xfader.min.js"></script>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery('#fader1').xFader();
+		jQuery('#fader2').xFader({auto:false});
+		jQuery('#fader3').xFader({auto:true, duration:2000});
+		jQuery('#fader4').xFader({auto:true, showControls:true, duration:4000});
+		jQuery('#fader5').xFader({control:1, showControls:true,});
+	});
+</script>
+</head>
+<body>
+
+	<div class="wrap">
+      
+    	<h1>xFader jQuery Plugin - Alexandre Mattos</h1>
+        <p>Plugin de slide de imagens com controle e autorun. Controle vertical ou horizontal. Simples e objetivo.</p>
+        <p><a href="http://www.alexandremattos.com.br/xFader/xFader.zip" title="Download xFader zip">Baixar Plugin xFader</a></p>
+        <br />
+        
+        <h4>Para utilizar é bem simples.</h4>
+        <p>1 - Inclua no head do seu código o jquery via google, você pode usar o que está abaixo</p>
+        <code>&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"&gt;&lt;/script&gt;</code>
+        <p>2 - Inclua abaixo do jquery que você colocou, o link para o script do plugin xFader.</p>
+        <code>&lt;script src="js/jquery.xfader.min.js"&gt;&lt;/script&gt;</code>
+        <p>3 - Insira o css do plugin e coloque a imagem dentro da respectiva pasta, se não mudar a estrutura das pastas tudo irá funcionar, caso mude, terá que mudar o endereço dos caminhos e no css mudar o endereço da imagem.</p>
+        <code>&lt;link href="css/xfader.css" type="text/css" rel="stylesheet" /&gt;</code>
+        
+        <p>4 - Insira o html em uma ul li como exemplo abaixo:</p>
+        <code>
+            &lt;ul id="fader1"&gt;<br />
+                &lt;li&gt;<br />
+                    &lt;img src="img/example1.png" alt="example1" /&gt;<br />
+                &lt;/li&gt;<br />
+                &lt;li&gt;<br />
+                    &lt;img src="img/example2.png" alt="example2" /&gt;<br />
+                &lt;/li&gt;<br />
+                ...<br />
+            &lt;/ul&gt;
+        </code>
+        
+        <p>5 - Lá no head novamente insira a chamada do plugin referenciando a sua lista</p>
+        <code>
+        	&lt;script type="text/javascript"&gt;
+				jQuery(document).ready(function(){
+					jQuery('#fader1').xFader();
+				});
+			&lt;/script&gt;
+        </code>
+    	
+    	<h4>1 - xFader puro</h4>
+        
+        <code>
+       		jQuery('#fader1').xFader();
+        </code>
+        
+        <div class="formated">
+            <ul id="fader1">
+                <li>
+                    <img src="img/example1.png" alt="example1" />
+                </li>
+                <li>
+                    <img src="img/example2.png" alt="example2" />
+                </li>
+                <li>
+                    <img src="img/example3.png" alt="example3" />
+                </li>
+            </ul>
+        </div>
+        
+        <h4>2 - xFader com auto:off</h4>
+        
+        <code>
+       		jQuery('#fader2').xFader({auto:false});
+        </code>
+        
+        <div class="formated">
+            <ul id="fader2">
+                <li>
+                    <img src="img/example1.png" alt="example1" />
+                </li>
+                <li>
+                    <img src="img/example2.png" alt="example2" />
+                </li>
+                <li>
+                    <img src="img/example3.png" alt="example3" />
+                </li>
+            </ul>
+        </div>
+        
+        <h4>3 - xFader com auto:true e duration:2000</h4>
+        
+        <code>
+       		jQuery('#fader3').xFader({auto:true, duration:2000});
+        </code>
+        
+        <div class="formated">
+            <ul id="fader3">
+                <li>
+                    <img src="img/example1.png" alt="example1" />
+                </li>
+                <li>
+                    <img src="img/example2.png" alt="example2" />
+                </li>
+                <li>
+                    <img src="img/example3.png" alt="example3" />
+                </li>
+            </ul>
+        </div>
+        
+        <h4>4 - xFader com controls e duration:5000</h4>
+        
+        <code>
+       		jQuery('#fader4').xFader({auto:true, showControls:true, duration:4000});
+        </code>
+        
+        <div class="formated">
+            <ul id="fader4">
+                <li>
+                    <img src="img/example1.png" alt="example1" />
+                </li>
+                <li>
+                    <img src="img/example2.png" alt="example2" />
+                </li>
+                <li>
+                    <img src="img/example3.png" alt="example3" />
+                </li>
+            </ul>
+        </div>
+        
+        <h4>5 - xFader com controle na vertical</h4>
+        
+        <code>
+        	jQuery('#fader5').xFader({control:1, showControls:true,});
+        </code>
+        
+        <div class="formated">
+            <ul id="fader5">
+                <li>
+                    <img src="img/example1.png" alt="example1" />
+                </li>
+                <li>
+                    <img src="img/example2.png" alt="example2" />
+                </li>
+                <li>
+                    <img src="img/example3.png" alt="example3" />
+                </li>
+            </ul>
+         </div>
+    
+    </div>
+
+    Obrigado
+
+</body>
+</html>

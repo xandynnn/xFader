@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document 
+
+xFader jQuery Plugin
+Author: Alexandre Mattos <xandynnn>
+
+*/
+
+
+/*reset*/
+*{margin:0;padding:0;outline:none;}
+header, footer, article, aside, nav, section {display:block;}
+audio, canvas, video {display:inline-block;g*display:inline;*zoom:1;}
+a img{border:0;}
+
+.wrap{margin:0 auto;width:1002px;padding:0 0 40px 0;}
+body{font-family: "Arial", sans-serif;}
+
+h1{font-family:Verdana, Geneva, sans-serif;font-size:30px;color:#333;margin:30px 0;}
+
+h4{font-family:Verdana, Geneva, sans-serif;font-size:16px;color:#333;margin:30px 0 10px 0;}
+code{padding:20px;margin-bottom:10px;display:block;color:#666}
+
+/*--------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+start Plugin Css
+----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------*/
+
+/* USER DEFINE */
+.formated ul{list-style:none;}
+.formated ul{position:relative;overflow:hidden;height:400px;width:300px;}
+.formated ul li{position:absolute;top:0;left:0;}
+
+/*PLUGIN DEFINE*/
+.controls{position:absolute;display:block;overflow:hidden;z-index:100;}
+.controls a{float:left;width:10px;height:10px;background:url('../img/fader.png') top left no-repeat;}
+.controls a.selected{background-position:bottom left;}
+
+/*--------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+End Plugin Css
+----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------*/
